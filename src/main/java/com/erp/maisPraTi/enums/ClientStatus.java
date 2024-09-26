@@ -16,6 +16,6 @@ public enum ClientStatus {
 
     @JsonValue
     public String getStatus(){
-        return status;
+        return this.status;
     }
 }

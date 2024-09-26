@@ -1,12 +1,10 @@
-package com.erp.maisPraTi.dtos;
+package com.erp.maisPraTi.dto;
 
 import com.erp.maisPraTi.enums.ClientStatus;
-import jakarta.persistence.Column;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,9 +16,8 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ClientDto {
+public class ClientUpdateDto {
 
-    private Long id;
     @NotBlank(message = "O campo nome é obrigatório")
     private String fullName;
     private String gender;
@@ -42,7 +39,6 @@ public class ClientDto {
     private String notes;
     @Enumerated(EnumType.STRING)
     private ClientStatus status;
-    private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
 }

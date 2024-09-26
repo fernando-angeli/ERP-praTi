@@ -1,6 +1,6 @@
-package com.erp.maisPraTi.repositories;
+package com.erp.maisPraTi.repository;
 
-import com.erp.maisPraTi.entities.Client;
+import com.erp.maisPraTi.model.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

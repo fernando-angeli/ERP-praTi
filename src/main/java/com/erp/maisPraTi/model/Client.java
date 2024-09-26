@@ -1,9 +1,8 @@
-package com.erp.maisPraTi.entities;
+package com.erp.maisPraTi.model;
 
 import com.erp.maisPraTi.enums.ClientStatus;
 import jakarta.persistence.*;
 import lombok.*;
-import org.antlr.v4.runtime.misc.NotNull;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
